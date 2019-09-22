@@ -1,3 +1,20 @@
-p {
-    color: blue;
+ html {
+    font-size: 62.5%;
 }
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@import './variables';
+@import './typography';
+@import './navbar';
+@import './hero';
+@import './stack';
+@import './projects';
+@import './design';
+@import './gallery';
+@import './contact';

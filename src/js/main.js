@@ -1,4 +1,4 @@
-import { imie } from "./write";
+import 'normalize.css'
 import './../scss/main.scss'
 
-console.log(imie);
+
