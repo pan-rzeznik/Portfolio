@@ -1,0 +1,7 @@
+// Grid system
+@mixin full-width-grid{
+    width: 100vw;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+} 
