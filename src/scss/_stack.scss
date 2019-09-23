@@ -1,0 +1,112 @@
+.stack {
+    margin: 80px 0;
+    padding: 0 20px;
+
+    &-background {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 620px;
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.151);
+    }
+
+    &-logos {
+        position: relative;
+        margin-right: 30px;
+        order: 0;
+        height: 100%;
+        min-width: 750px;
+        width: 30%;
+
+
+        .angular {
+            position: absolute;
+            top: 34%;
+            right: 19%;
+        }
+
+        .firebase {
+            position: absolute;
+            top: 12%;
+            right: 17%;
+        }
+
+        .webpack {
+            position: absolute;
+            top: 12%;
+            right: 37%;
+        }
+
+        .typescript {
+            position: absolute;
+            top: 44%;
+            right: 55%;
+        }
+
+        .git {
+            position: absolute;
+            top: 24%;
+            right: 49%;
+        }
+
+        .html {
+            position: absolute;
+            top: 25%;
+            right: 66%;
+        }
+
+        .sass {
+            position: absolute;
+            top: 67%;
+            right: 49%;
+        }
+
+        .css {
+            position: absolute;
+            top: 78%;
+            right: 33%;
+        }
+
+        .bootstrap {
+            position: absolute;
+            top: 7%;
+            right: 59%;
+        }
+
+        .npm {
+            position: absolute;
+            top: 60%;
+            right: 69%;
+        }
+
+        .js {
+            position: absolute;
+            top: 42%;
+            right: 75%;
+        }
+
+        .gulp {
+            position: absolute;
+            top: 9%;
+            right: 75%;
+        }
+    }
+
+    .section-title {
+        margin: 7% 20px 20px 0;
+    }
+
+    .section-description {
+        max-width: 40%;
+        margin-bottom: 35px;
+    }
+
+    .btn {
+        max-width: 200px;
+        margin-bottom: 0;
+    }
+}

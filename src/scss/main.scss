@@ -14,6 +14,8 @@ body {
 }
 
 .page-container {
+    width: 100vw;
+    max-width: 100%;
     position: relative;
     overflow-x: hidden;
 
@@ -34,6 +36,18 @@ body {
         max-width: 150px;
         font-size: 14px;
     }
+}
+
+.btn-blue {
+    color: #82AAFE;
+    border: 2px solid #82AAFE;
+
+    @media (max-width: 506px) { 
+        border: 1px solid #82AAFE;
+        max-width: 150px;
+        font-size: 14px;
+    }
+
 }
 
 .br-hero {
