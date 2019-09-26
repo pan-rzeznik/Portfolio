@@ -10,6 +10,7 @@
     align-items: flex-end;
     padding: 20px 0;
     margin: 20px 5vw 0 10vw;
+    transition: .3s transform ease-out .07s;
 
     @media (max-width: 1490px) {
         width: 60vw;
@@ -21,17 +22,13 @@
     }
 }
 
-    .hamburger-menu {
-        display: none;
+    
 
-        @media (max-width: 801px) {
-            display: inline-block;
-        }
-    }
 
 
 .logo {
     height: 50px;
+    display: inline-block;
 
     img {
         height: 100%;
@@ -67,4 +64,98 @@
     @media (max-width: 801px) {
         display: none;
     }
+
+}
+
+.side-nav {
+    position: fixed;
+    z-index: 1100;
+    top: 0;
+    right: -100px;
+    height: 100vh;
+    width: 280px;
+    background-color: rgb(56, 56, 56);
+    transform: translateX(200px);
+    transition: .3s transform ease-out;
+
+   
+    
+    .side-menu-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        margin-top: 35px;
+    
+     &__item {
+            padding: 15px 10px;
+            font-size: 14px;
+            cursor: pointer;
+    
+            a {
+                font-weight: 500;
+                text-decoration: none;
+                color: rgb(172, 172, 172);
+            }
+        }
+    
+    }
+}
+.side-nav--open {
+    transform: translateX(0);
+}
+
+
+.hamburger-menu {
+    display: none;
+    height: 35px;
+    cursor: pointer; 
+    
+
+    button {
+        background-color: transparent;
+        border: none;
+        padding: 15px 5px;
+        cursor: pointer; 
+       
+    }
+
+    .bar {
+        position: relative;
+        display: block;
+        height: 3px;
+        width: 28px;
+        background-color: rgba(226, 226, 226, 0.61);
+
+        &::before {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 28px;
+            background-color: rgba(226, 226, 226, 0.61);
+            position: absolute;
+            top: -9px;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 28px;
+            background-color: rgba(226, 226, 226, 0.61);
+            position: absolute;
+            bottom: -9px;
+        }
+    } 
+
+    @media (max-width: 801px) {
+        display: inline-block;
+    }
+
+   
+}
+
+.moveBtn {
+    transform: translateX(-180px);
 }
