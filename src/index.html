@@ -2,35 +2,37 @@
 <html lang="en">
 
 <head>
+    <link rel="icon" type="image/png" href="./assets/FV.png"/> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+
+    <title>M-Websites</title>
 </head>
 
 <body>
     <div class="page-container">
-            <nav class="side-nav">
-                    <div class="side-menu">
-                        <ul class="side-menu-list">
-                            <li class="side-menu-list__item">
-                                <a href="#">HOME</a>
-                            </li>
-                            <li class="side-menu-list__item">
-                                <a href="#">O MNIE</a>
-                            </li>
-                            <li class="side-menu-list__item">
-                                <a href="#">PROJKETY</a>
-                            </li>
-                            <li class="side-menu-list__item">
-                                <a href="#">DESIGN</a>
-                            </li>
-                            <li class="side-menu-list__item">
-                                <a href="#">KONTAKT</a>
-                            </li>
-                        </ul>
-                    </div>
-            </nav>
+        <nav class="side-nav">
+            <div class="side-menu">
+                <ul class="side-menu-list">
+                    <li class="side-menu-list__item">
+                        <a href="#">HOME</a>
+                    </li>
+                    <li class="side-menu-list__item">
+                        <a href="#">O MNIE</a>
+                    </li>
+                    <li class="side-menu-list__item">
+                        <a href="#">PROJKETY</a>
+                    </li>
+                    <li class="side-menu-list__item">
+                        <a href="#">DESIGN</a>
+                    </li>
+                    <li class="side-menu-list__item">
+                        <a href="#">KONTAKT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <header>
             <nav class="nav">
                 <div class="logo">
@@ -70,9 +72,9 @@
                             <h2>junior</h2>
                             <h1>frontend developer</h1>
                         </header>
-                        <h3>Mam na imię Damian i na co dzień zajmuje się <br class="br-hero">
-                            projektowaniem i programowaniem aplikacji webowych.
-                            Weekendami studiuje w Krakowie Informatykę i Ekonometirię.
+                        <h3>Mam na imię Damian i na co dzień zajmuje się   <br class="br-hero">
+                             projektowaniem i programowaniem aplikacji webowych.
+                            Weekendami studiuje w Krakowie Informatykę i Ekonometirię na 3 roku. 
                             Obecnie poszukuje pracy.
                         </h3>
                     </div>
@@ -91,9 +93,8 @@
                 </div>
                 <div class="img-section">
                     <div class="img-section__photo">
-                        <img src="./assets/gallery/NoPath — kopia (4)@2x.jpg" alt="">
-                        <div class="img-section__frame1"></div>
-                        <div class="img-section__frame2"></div>
+                        <div class="img-section--frame1 img-section__frame"></div>
+                        <div class="img-section--frame2 img-section__frame"></div>
                     </div>
 
                 </div>
@@ -143,16 +144,268 @@
                     <h2 class="section-title">
                         STACK<br>TECHNOLOGICZNY
                     </h2>
-                    <h3 class="section-description">Codzinnie pisze aplikacje przy pomocy Angulara 6+. <br class="br-stack">
-                        W przyszłości chciałbym dołączyć do zespołu, który pozowli wpełni rzwinać mi skrzydła w tej
-                        technologii.
+                    <h3 class="section-description">Na codzień głównie skupiam się na pisaniu aplikacji przy pomocy Angulara 6+. <br
+                            class="br-stack">
+                        W przyszłości chciałbym dołączyć do zespołu, który pozowli mi wpełni rozwinać skrzydła w tej
+                        technologii. Jako backend w swoich projektach korzystam z usług jakie oferuje Firebase. Jestem otawrty na inne technologie typu React lub Vue
                     </h3>
                     <button class="btn btn-blue">Zobacz projekty</button>
                 </div>
             </section>
+            <section class="projects">
+                <h2 class="section-title"> MOJE PROJEKTY </h2>
+                <h3 class="section-description">Kliknij w wybrany projekt by poznac szczegóły. Projekty są przdstawione
+                    w kolejności od najnowszego po najstarszy. Większość z nich to landing page z
+                     wyjąkiem sklepu internetowego, który napsiałem przy pomocy Angulara + Firebase</h3>
+                <div class="projects-grid">
+                    <div class="projects-grid__item">
+                        <div class="img-box">
+                            <img src="./assets/projects/portfolio@2x.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="projects-grid__item">
+                        <div class="img-box">
+                            <img src="./assets/projects/ehorel@2x.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="projects-grid__item">
+                        <div class="img-box">
+                            <img src="./assets/projects/watch@2x.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="projects-grid__item">
+                        <div class="img-box">
+                            <img src="./assets/projects/fitness@2x.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="projects-grid__item">
+                        <div class="img-box">
+                            <img src="./assets/projects/forest@2x.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="projects-grid__item">
+                        <div class="img-box">
+                            <img src="./assets/projects/crafty@2x.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="design">
+                <div class="design-background">
+                    <div class="design-tools">
+                        <div class="design-tools__box design-tools__ps">
+                            <img src="./assets/ps-logo.svg" alt="Photoshop logo">
+                        </div>
+                        <div class="design-tools__box">
+                            <img src="./assets/xd-logo.svg" alt="XD logo">
+                        </div>
+                    </div>
+                    <h2 class="section-title">
+                        UMIEJĘTNOŚCI <br> PROJEKTOWE
+                    </h2>
+                    <h3 class="section-description">Dawniej zajmowałem się projektowaniem interfejsów gier mobilnych
+                        czysto hobbystycznie co z czasem przerodziło się w pracę zdalną nad dużym tytułem desktopowym. 
+                        Był to nasz pierwszy poważny kontrakt, nad którym spędziliśmy ponad rok łącznie z negocjacjami.
+                        Obecnie nie zajmuje się już tematyką gier ale umiejętności zdobyte wtedy wykorzystuje do
+                        projektowania aplikacji webowych.
+                    </h3>
+                    <button class="btn btn-blue">Idź do galerii</button>
+                </div>
+            </section>
+            <section class="gallery">
+                <div class="gallery-text-info">
+                    <h2 class="section-title">
+                        Moje prace
+                    </h2>
+                    <h3 class="section-description">Galeria poniżej przedstawia część z moich autorskich projektów jakie
+                        wykonałem do tej pory na potrzeby naszych aplikacji, które były firmowane logiem Nevadro Apps. 
+                        Cześć z nich nie było wykorzystywane w produktach, a tylko na naszych kanałach społecznościowych.
+                    </h3>
+                </div>
+                <div class="gallery__box">
+                    <div class="button-group filters-button-group">
+                        <h4 class="button-group__title">Wybierz kategorię:</h4>
+                        <button class="button is-checked default" data-filter=".nobles">Gra desktopowa</button>
+                        <button class="button" data-filter=".nevadro-apps">Gry mobilne</button>
+                        <button class="button" data-filter=".others">Pozostałe</button>
+                    </div>
+                    <div class="grid">
+                        <div class="nobles">
+                            <div class="element-item nobles " data-category="nobles">
+                                <img src="./assets/gallery/tale/m-websites.pl_nobles_inn@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nobles " data-category="nobles">
+                                <img src="./assets/gallery/tale/m-websites.pl_nobles_worldmap@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nobles " data-category="nobles">
+                                <img src="./assets/gallery/tale/m-websites.pl_nobles_cards@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nobles " data-category="nobles">
+                                <img src="./assets/gallery/tale/m-websites.pl_nobles_warehouse@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nobles " data-category="nobles">
+                                <img src="./assets/gallery/tale/m-websites.pl_nobles_granary@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nobles " data-category="nobles">
+                                <img src="./assets/gallery/tale/m-websites.pl_nobles_villagers@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nobles " data-category="nobles">
+                                <img src="./assets/gallery/tale/m-websites.pl_nobles_fishing@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nobles " data-category="nobles">
+                                <img src="./assets/gallery/tale/m-websites.pl_nobles_cards2@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nobles " data-category="nobles">
+                                <img src="./assets/gallery/tale/m-websites.pl_nobles_main-menu@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nobles " data-category="nobles">
+                                <img src="./assets/gallery/tale/m-websites.pl_nobles_villagers2@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nobles " data-category="nobles">
+                                <img src="./assets/gallery/tale/m-websites.pl_nobles_granary2@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nobles " data-category="nobles">
+                                <img src="./assets/gallery/tale/m-websites.pl_nobles_decors@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nobles " data-category="nobles">
+                                <img src="./assets/gallery/tale/m-websites.pl_nobles_boat@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nobles " data-category="nobles">
+                                <img src="./assets/gallery/tale/m-websites.pl_nobles_harvest@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nobles " data-category="nobles">
+                                <img src="./assets/gallery/tale/m-websites.pl_nobles_vilage-map@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nobles " data-category="nobles">
+                                <img src="./assets/gallery/tale/m-websites.pl_nobles_court@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nobles " data-category="nobles">
+                                <img src="./assets/gallery/tale/m-websites.pl_nobles_promo@2x.jpg" alt="">
+                            </div>
+
+                        </div>
+                        <div class="nevadro">
+                            <div class="element-item nevadro-apps" data-category="nevadro-apps">
+                                <img src="./assets/gallery/nevadro/m-websites.pl_nevadro_domino-promo@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nevadro-apps" data-category="nevadro-apps">
+                                <img src="./assets/gallery/nevadro/m-websites.pl_nevadro_domino1@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nevadro-apps element-item--no-background"
+                                data-category="nevadro-apps">
+                                <img src="./assets/gallery/nevadro/m-websites.pl_nevadro_quiz-icon@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nevadro-apps" data-category="nevadro-apps">
+                                <img src="./assets/gallery/nevadro/m-websites.pl_nevadro_planes-promo@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nevadro-apps nevadro-apps--wide " data-category="nevadro-apps">
+                                <img src="./assets/gallery/nevadro/m-websites.pl_nevadro_planes@2x.jpg" alt="">
+                            </div>
+
+                            <div class="element-item nevadro-apps" data-category="nevadro-apps">
+                                <img src="./assets/gallery/nevadro/m-websites.pl_nevadro_domino2@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nevadro-apps" data-category="nevadro-apps">
+                                <img src="./assets/gallery/nevadro/m-websites.pl_nevadro_domino3@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nevadro-apps" data-category="nevadro-apps">
+                                <img src="./assets/gallery/nevadro/m-websites.pl_nevadro_quiz@2x.jpg" alt="">
+                            </div>
+
+                            <div class="element-item nevadro-apps" data-category="nevadro-apps">
+                                <img src="./assets/gallery/nevadro/m-websites.pl_nevadro_quiz-mock-up@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nevadro-apps" data-category="nevadro-apps">
+                                <img src="./assets/gallery/nevadro/m-websites.pl_nevadro_domino4@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nevadro-apps" data-category="nevadro-apps">
+                                <img src="./assets/gallery/nevadro/m-websites.pl_nevadro_domino-event@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nevadro-apps" data-category="nevadro-apps">
+                                <img src="./assets/gallery/nevadro/m-websites.pl_nevadro_domino-promo3@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nevadro-apps" data-category="nevadro-apps">
+                                <img src="./assets/gallery/nevadro/m-websites.pl_nevadro_domino-promo4@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nevadro-apps" data-category="nevadro-apps">
+                                <img src="./assets/gallery/nevadro/m-websites.pl_nevadro_domino-promo2@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nevadro-apps" data-category="nevadro-apps">
+                                <img src="./assets/gallery/nevadro/m-websites.pl_nevadro_quiz-promo@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nevadro-apps" data-category="nevadro-apps">
+                                <img src="./assets/gallery/nevadro/m-websites.pl_nevadro_domino-icon@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item element-item--no-background nevadro-apps"
+                                data-category="nevadro-apps">
+                                <img src="./assets/gallery/nevadro/m-websites.pl_nevadro_memory-icon@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item nevadro-apps" data-category="nevadro-apps">
+                                <img src="./assets/gallery/nevadro/m-websites.pl_nevadro_memory-promo@2x.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="others">
+                            <div class="element-item others" data-category="others">
+                                <img src="./assets/gallery/others/m-websites.pl_others_3d-domino@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item others" data-category="others">
+                                <img src="./assets/gallery/others/m-websites.pl_others_3d-object@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item others" data-category="others">
+                                <img src="./assets/gallery/others/m-websites.pl_others_advertisement@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item others" data-category="others">
+                                <img src="./assets/gallery/others/m-websites.pl_others_ball@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item others" data-category="others">
+                                <img src="./assets/gallery/others/m-websites.pl_others_ligth-bulb@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item others" data-category="others">
+                                <img src="./assets/gallery/others/m-websites.pl_others_mock-up@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item others" data-category="others">
+                                <img src="./assets/gallery/others/m-websites.pl_others_n@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item others" data-category="others">
+                                <img src="./assets/gallery/others/m-websites.pl_others_personal-logo@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item others" data-category="others">
+                                <img src="./assets/gallery/others/m-websites.pl_others_photo-manipulation3@2x.jpg"
+                                    alt="">
+                            </div>
+                            <div class="element-item others" data-category="others">
+                                <img src="./assets/gallery/others/m-websites.pl_others_photo-manipulaton2@2x.jpg"
+                                    alt="">
+                            </div>
+                            <div class="element-item others" data-category="others">
+                                <img src="./assets/gallery/others/m-websites.pl_others_post2@2x.jpg" alt="">
+                            </div>
+
+                            <div class="element-item others" data-category="others">
+                                <img src="./assets/gallery/others/m-websites.pl_others_post3@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item others" data-category="others">
+                                <img src="./assets/gallery/others/m-websites.pl_others_post@2x.jpg" alt="">
+                            </div>
+
+                            <div class="element-item others" data-category="others">
+                                <img src="./assets/gallery/others/m-websites.pl_others_poto-manipulation@2x.jpg" alt="">
+                            </div>
+                            <div class="element-item others" data-category="others">
+                                <img src="./assets/gallery/others/m-websites.pl_others_vector-helmet@2x.jpg" alt="">
+                            </div>
+
+                            <div class="element-item others" data-category="others">
+                                <img src="./assets/gallery/others/m-websites.pl_others_vector-island@2x.jpg" alt="">
+                            </div>
+                        </div>
+                </div>
+                </div>
+            </section>
         </main>
-        <footer></footer>
+    <footer></footer>
     </div>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 </body>
 
 </html>

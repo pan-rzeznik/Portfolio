@@ -26,6 +26,9 @@
   },
   "dependencies": {
     "clean-webpack-plugin": "^2.0.0",
-    "normalize.css": "^8.0.1"
+    "gsap": "^2.1.3",
+    "hover-effect": "^1.1.0",
+    "normalize.css": "^8.0.1",
+    "three": "^0.109.0"
   }
 }

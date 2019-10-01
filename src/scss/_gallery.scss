@@ -1,0 +1,136 @@
+.gallery {
+    position: relative;
+    @include spacing-section;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+
+    &-text-info {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media(max-width: 660px) {
+            text-align: left;
+            align-items: flex-start;
+        }
+    }
+
+    &__box {
+        display: block;
+        // padding: 0 55px;
+
+        @media(max-width: 660px) {
+            padding: 0
+        }
+    }
+    
+    
+    .section-description {
+        max-width: 900px;
+        margin-bottom: 15px;
+    }
+
+    .grid {
+        overflow: hidden;
+        padding: 0 5vw 0 6vw; 
+
+        @media(max-width: 660px) {
+            padding: 0;
+        }
+    }
+    
+     .element-item {
+       max-width: 400px;
+       margin: 15px;
+
+       @media(max-width: 660px) {
+        margin: 10px 0;
+        }
+      
+       img {
+        border-radius: 7px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.37);
+           width: 100%;
+       }
+
+      
+
+       &--no-background {
+
+        img {
+            box-shadow: none;
+        }
+         
+       }
+    }
+
+    .element-item.nevadro-apps {
+        width:300px;
+
+        @media(max-width: 1170px) {
+            width: 400px;
+        }
+        @media(max-width: 880px) {
+            width: 100%;
+        }
+    }
+
+    
+
+    .button-group {
+        display: flex;
+        flex-wrap: wrap; 
+        margin: 15px 15px 50px; 
+
+
+        @media(max-width: 660px) {
+            margin: 15px 0;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__title {
+            color: #1255E2;
+            font-size: 20px;
+            font-weight: 700;
+            width: 100%;
+            
+            @media(max-width: 660px) {
+                font-size: 14px;
+            }
+           
+            
+        }
+
+        .button {
+            background-color: #1255E2;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-weight: 700;
+            font-size: 16px;
+            color: rgb(255, 255, 255);
+            opacity: .5;
+            transition: .5s opacity;
+
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+
+            @media(max-width: 660px) {
+                font-size: 14px;
+                margin: 8px 0;
+            }
+        }
+
+        .is-checked {
+            opacity: 1;
+            color: rgb(230, 230, 230);
+        }
+    }
+
+}
+   

@@ -1,7 +1,17 @@
 // Grid system
-@mixin full-width-grid{
-    width: 100vw;
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-} 
+@mixin spacing-section {
+    margin: 110px 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    @media(max-width:1170px) {
+        margin: 0;
+        padding: 60px 20px;
+    }
+
+    @media(max-width:660px) {
+        margin: 0;
+        padding: 30px 20px;
+    }
+}
+

@@ -7,6 +7,18 @@ h1, h2, h3, p, a {
     font-size: 45px;
     font-weight: 900;
     margin-bottom: 0;
+    text-align: left;
+
+    @media(max-width:1170px) {
+        font-size: 40px;
+    }
+
+    @media(max-width: 660px) {
+        font-size: 30px;
+    }
+
+
+
 }
 .section-description {
     line-height: 1.8;
@@ -14,4 +26,12 @@ h1, h2, h3, p, a {
     font-size: 18px;
     font-weight: 400;
     color: #82AAFE;
+
+    @media(max-width:1170px) {
+        font-size: 16px;
+    }
+
+    @media(max-width: 660px) {
+        font-size: 14px;
+    }
 }

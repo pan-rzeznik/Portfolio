@@ -68,6 +68,7 @@
 }
 
 .side-nav {
+    display: none;
     position: fixed;
     z-index: 1100;
     top: 0;
@@ -78,6 +79,9 @@
     transform: translateX(200px);
     transition: .3s transform ease-out;
 
+    @media(max-width: 801px) {
+        display: block;
+    }
    
     
     .side-menu-list {

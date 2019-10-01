@@ -1,0 +1,125 @@
+.design {
+    @include spacing-section;
+
+
+    &-background {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 570px;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.11);
+
+        @media(max-width:1170px) {
+            flex-wrap: nowrap;
+            height: auto;
+            padding: 30px;
+        }
+    }
+
+    .section-title {
+        margin: 7% 20px 20px 45px;
+        order: 0;
+    
+        @media(max-width:1170px) {
+            order: 0;
+            margin: 20px 10px;
+            
+        }
+    
+        @media(max-width: 660px) {
+            margin: 20px 10px 30px;
+        }
+    }
+    
+    .section-description {
+        max-width: 40%;
+        margin: 0 0 35px 45px;
+        order: 1;
+    
+        @media(max-width:1170px) {
+            order: 2;
+            max-width: 80%;
+            margin: 0 0 35px 0;
+        }
+    
+        
+        @media(max-width: 660px) {
+            font-size: 14px;
+            max-width: 100%;
+        }
+    }
+    
+    .btn {
+        order: 2;
+        max-width: 200px;
+        margin: 0 0 0 45px;
+    
+        @media(max-width:1170px) {
+            order: 3;
+            margin: 0;
+        }
+    
+        @media(max-width: 660px) {
+            font-size: 14px;
+            
+        }
+    }
+}
+
+.design-tools {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    order: 4;
+
+    &__ps {
+        margin-right: 0px;
+    }
+
+    &__box {
+
+        img {
+            width: 90%;
+        }
+   }
+
+
+ 
+    @media(max-width:1170px) {
+        padding: 30px 0;
+        order: 1;
+        max-width: 100%;
+        justify-content: flex-start;
+
+        &__ps {
+            margin-right: -50px;
+        }
+
+        &__box {
+
+             img {
+                 width: 80%;
+             }
+        }
+    }
+
+    @media(max-width:660px) {
+
+        &__ps {
+            margin-right: -40px;
+        }
+
+        &__box {
+
+             img {
+                 width: 75%;
+             }
+        }
+    }
+}
+
