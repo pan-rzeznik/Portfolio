@@ -6,7 +6,7 @@ new hoverEffect({
     speedIn: 2,
     angle1: 135,
     angle2: 135,
-    image1: 'dist/imgs/photo.jpg',
-    image2: 'dist/imgs/photo2.png',
-    displacementImage: 'dist/imgs/stripe1.png'
+    image1: 'assets/imgs/photo.jpg',
+    image2: 'assets/imgs/photo2.png',
+    displacementImage: 'assets/imgs/stripe1.png'
 }) 
