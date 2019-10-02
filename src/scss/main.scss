@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
-@import './variables';
-@import './typography';
+
 
  html {
     font-size: 62.5%;
@@ -13,6 +12,12 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.loader {
+    display: block;
+    background: black;
+    width: 100vw;
+    height: 100vh;
+}
 .page-container {
     width: 100vw;
     max-width: 100%;
@@ -65,8 +70,7 @@ body {
 }
 
 
-
-
+@import './variables';
 @import './typography';
 @import './navbar';
 @import './hero';
@@ -75,4 +79,3 @@ body {
 @import './design';
 @import './gallery';
 @import './contact';
-

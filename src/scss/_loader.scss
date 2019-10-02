@@ -1,0 +1,121 @@
+@-webkit-keyframes SPINNER {
+    0%   { -webkit-transform: translate(-50%,-50%) rotate(0deg); }
+    100% { -webkit-transform: translate(-50%,-50%) rotate(360deg); }
+  }
+  @-moz-keyframes SPINNER {
+    0%   { -moz-transform: translate(-50%,-50%) rotate(0deg); }
+    100% { -moz-transform: translate(-50%,-50%) rotate(360deg); }
+  }
+  @-ms-keyframes SPINNER {
+    0%   { -ms-transform: translate(-50%,-50%) rotate(0deg); }
+    100% { -ms-transform: translate(-50%,-50%) rotate(360deg); }
+  }
+  @-o-keyframes SPINNER {
+    0%   { -o-transform: translate(-50%,-50%) rotate(0deg); }
+    100% { -o-transform: translate(-50%,-50%) rotate(360deg); }
+  }
+  @keyframes SPINNER {
+    0%   { transform: translate(-50%,-50%) rotate(0deg); }
+    100% { transform: translate(-50%,-50%) rotate(360deg); }
+  }
+  
+  @-webkit-keyframes LABEL {
+    0%   { opacity: 1.0; -webkit-transform: translate(-50%,-50%) scale(1.0); }
+    5%   { opacity: 0.5; -webkit-transform: translate(-50%,-50%) scale(0.5); }
+    95%  { opacity: 0.5; -webkit-transform: translate(-50%,-50%) scale(0.5); }
+    100% { opacity: 1.0; -webkit-transform: translate(-50%,-50%) scale(1.0); }
+  }
+  @-moz-keyframes LABEL {
+    0%   { opacity: 1.0; -moz-transform: translate(-50%,-50%) scale(1.0); }
+    5%   { opacity: 0.5; -moz-transform: translate(-50%,-50%) scale(0.5); }
+    95%  { opacity: 0.5; -moz-transform: translate(-50%,-50%) scale(0.5); }
+    100% { opacity: 1.0; -moz-transform: translate(-50%,-50%) scale(1.0); }
+  }
+  @-ms-keyframes LABEL {
+    0%   { opacity: 1.0; -ms-transform: translate(-50%,-50%) scale(1.0); }
+    5%   { opacity: 0.5; -ms-transform: translate(-50%,-50%) scale(0.5); }
+    95%  { opacity: 0.5; -ms-transform: translate(-50%,-50%) scale(0.5); }
+    100% { opacity: 1.0; -ms-transform: translate(-50%,-50%) scale(1.0); }
+  }
+  @-o-keyframes LABEL {
+    0%   { opacity: 1.0; -o-transform: translate(-50%,-50%) scale(1.0); }
+    5%   { opacity: 0.5; -o-transform: translate(-50%,-50%) scale(0.5); }
+    95%  { opacity: 0.5; -o-transform: translate(-50%,-50%) scale(0.5); }
+    100% { opacity: 1.0; -o-transform: translate(-50%,-50%) scale(1.0); }
+  }
+  @keyframes LABEL {
+    0%   { opacity: 1.0; transform: translate(-50%,-50%) scale(1.0); }
+    5%   { opacity: 0.5; transform: translate(-50%,-50%) scale(0.5); }
+    95%  { opacity: 0.5; transform: translate(-50%,-50%) scale(0.5); }
+    100% { opacity: 1.0; transform: translate(-50%,-50%) scale(1.0); }
+  }
+  
+  *, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+  }
+
+  .overlay .spinner,
+  .overlay .spinner:before,
+  .overlay .spinner:after {
+    border: 2px solid rgba(0,0,0,0);
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .overlay .spinner:before,
+  .overlay .spinner:after {
+    content: "";
+  }
+  .overlay .spinner { 
+    width: 100px;
+    height: 100px;
+    -webkit-animation: SPINNER 3s linear infinite;
+    -moz-animation: SPINNER 3s linear infinite;
+    -ms-animation: SPINNER 3s linear infinite;
+    -o-animation: SPINNER 3s linear infinite;
+    animation: SPINNER 3s linear infinite;
+  }
+  .overlay .spinner:before {
+    width: 80px;
+    height: 80px;
+    -webkit-animation: SPINNER 7s linear infinite;
+    -moz-animation: SPINNER 7s linear infinite;
+    -ms-animation: SPINNER 7s linear infinite;
+    -o-animation: SPINNER 7s linear infinite;
+    animation: SPINNER 7s linear infinite;
+  }
+  .overlay .spinner:after {
+    width: 60px;
+    height: 60px;
+    -webkit-animation: SPINNER 1s linear infinite;
+    -moz-animation: SPINNER 1s linear infinite;
+    -ms-animation: SPINNER 1s linear infinite;
+    -o-animation: SPINNER 1s linear infinite;
+    animation: SPINNER 1s linear infinite;
+  }
+ 
+ 
+  
+  /* Customize */
+  .overlay {
+    background: #000;
+    transform-origin: left center;
+    transition: 1s transform;
+  }
+  .overlay .spinner,
+  .overlay .spinner:before,
+  .overlay .spinner:after {
+    border-top-color: rgb(255, 255, 255) !important;
+    border-bottom-color: rgb(211, 211, 211) !important;
+  }
+  .overlay .label {
+    color: rgba(0,255,255,1.0);
+  }
+
+  
