@@ -3,6 +3,7 @@
     align-items: center;
     flex-direction: column;
     @include spacing-section;
+    margin-bottom: 180px;
 
     @media(max-width: 800px) {
         align-items: flex-start;
@@ -22,8 +23,8 @@
     margin: 50px auto 0 auto;
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 700px));
-    grid-gap:50px 50px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 650px));
+    grid-gap:60px 50px;
     justify-content: center;
 
     &__item {
@@ -41,8 +42,8 @@
 
         .img-box {
             position: relative;
-            max-width: 700px;
-            height: 350px; 
+            max-width: 650px;
+            height: 340px; 
             border: 1px solid rgba(0, 0, 0, 0.048);
 
             @media(max-width: 760px) {

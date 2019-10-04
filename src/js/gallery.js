@@ -2,9 +2,9 @@ var iso = new Isotope( '.grid', {
     itemSelector: '.element-item',
 });
 
-window.addEventListener('DOMContentLoaded', (event) => {
-    document.querySelector('.default').click();
-});
+// window.addEventListener('loaded', (event) => {
+//     document.querySelector('.default').click();
+// });
 
   
   // filter functions
@@ -41,3 +41,32 @@ window.addEventListener('DOMContentLoaded', (event) => {
     });
   }
 
+
+
+  // Lazy loading gallery
+const sectionProjects = document.querySelector('.projects');
+const gallerySection = document.querySelector('.gallery');
+const sectionsObserve = [sectionProjects, gallerySection];
+const allImgs = document.querySelectorAll('img[data-src]')
+const gallerySectionObserver = new IntersectionObserver((entries, observer) => {
+  if(entries[0].isIntersecting || entries[1].isIntersecting) {
+    allImgs.forEach(element => {
+     const src = element.getAttribute('data-src');
+      element.setAttribute('src', src);
+    });
+    sectionsObserve.forEach( section => {
+      gallerySectionObserver.unobserve(section); 
+    })
+    setTimeout(() => {
+      document.querySelector('button[data-filter=".others"]').click(); 
+     
+    }, 100);
+
+    setTimeout(() => {
+      document.querySelector('button[data-filter=".nobles"]').click();
+    }, 400);
+  }
+})
+sectionsObserve.forEach( section => {
+  gallerySectionObserver.observe(section); 
+})

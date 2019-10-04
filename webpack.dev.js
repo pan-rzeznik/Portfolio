@@ -1,7 +1,8 @@
 const path = require("path");
 const common = require("./webpack.common");
 const merge = require("webpack-merge");
-var HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+
 
 module.exports = merge(common, {
   mode: "development",
@@ -9,10 +10,16 @@ module.exports = merge(common, {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist")
   },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9000
+  },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html"
-    })
+      template: "./src/index.html",
+    }),
+   
   ],
   module: {
     rules: [
