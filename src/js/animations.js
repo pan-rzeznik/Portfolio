@@ -35,7 +35,7 @@ const stackTextDesc = document.querySelector('.stack .section-description');
 const stackTextTitle = document.querySelector('.stack .section-title');
 const stackBtn= document.querySelector('.stack .btn');
 const ng = document.querySelector('.angular');
-const xPosition = window.innerWidth > 660 ? -100 : 0;
+const xPosition = window.innerWidth > 660 ? -100 : -35;
 const yPosition = window.innerWidth > 660 ? -30 : 0;
 
 tlStack.set(allIcons, {scale: .2, opacity: 0, x: 40, y: 30 })

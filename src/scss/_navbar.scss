@@ -11,7 +11,7 @@
     align-items: flex-end;
     padding: 20px 0;
     margin: 20px 5vw 0 10vw;
-    transition: .3s transform ease-out .07s;
+    
 
     @media (max-width: 1490px) {
         width: 60vw;
@@ -23,14 +23,11 @@
     }
 }
 
-    
-
-
 
 .logo {
     height: 50px;
     display: inline-block;
-
+    transition: .3s transform ease-out .07s;
     img {
         height: 100%;
     }
@@ -73,9 +70,9 @@
     position: fixed;
     z-index: 1100;
     top: 0;
-    right: -100px;
+    right: -110px;
     height: 100vh;
-    width: 280px;
+    width: 310px;
     background-color: rgb(56, 56, 56);
     transform: translateX(200px);
     transition: .3s transform ease-out;
@@ -116,7 +113,7 @@
     display: none;
     height: 35px;
     cursor: pointer; 
-    
+    transition: .3s transform ease-out .07s;
 
     button {
         background-color: transparent;
@@ -162,5 +159,22 @@
 }
 
 .moveBtn {
-    transform: translateX(-180px);
+    transform: translateX(-210px);
+}
+
+.nav--fixed {
+    position: fixed;
+    background-image:  linear-gradient(to bottom, rgb(17, 78, 209), rgb(0, 54, 170));
+    width: 100vw;
+    margin: 0;
+    padding: 15px 10vw;
+    align-items: center;
+
+    @media(max-width: 500px) {
+        padding: 8px 20px;
+    }
+
+    .logo {
+        height: 25px;
+    }
 }

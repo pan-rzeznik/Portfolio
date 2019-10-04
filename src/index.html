@@ -14,19 +14,22 @@
             <div class="side-menu">
                 <ul class="side-menu-list">
                     <li class="side-menu-list__item">
-                        <a href="#">HOME</a>
+                        <a href="#home">HOME</a>
                     </li>
                     <li class="side-menu-list__item">
-                        <a href="#">O MNIE</a>
+                        <a href="#about">O MNIE</a>
                     </li>
                     <li class="side-menu-list__item">
-                        <a href="#">PROJKETY</a>
+                        <a href="#projects">PROJKETY</a>
                     </li>
                     <li class="side-menu-list__item">
-                        <a href="#">DESIGN</a>
+                        <a href="#design">DESIGN</a>
                     </li>
                     <li class="side-menu-list__item">
-                        <a href="#">KONTAKT</a>
+                        <a href="#gallery">GALERIA</a>
+                    </li>
+                    <li class="side-menu-list__item">
+                        <a href="#contact">KONTAKT</a>
                     </li>
                 </ul>
             </div>
@@ -34,24 +37,30 @@
         <header>
             <nav class="nav">
                 <div class="logo">
-                    <img src="./assets/logo.svg" alt="Logo">
+                    <a href="#home"> 
+                         <img src="./assets/logo.svg" alt="Logo">
+                    </a>
+                  
                 </div>
                 <div class="menu">
                     <ul class="menu-list open">
                         <li class="menu-list__item">
-                            <a href="#">HOME</a>
+                            <a href="#home">HOME</a>
                         </li>
                         <li class="menu-list__item">
-                            <a href="#">O MNIE</a>
+                            <a href="#about">O MNIE</a>
                         </li>
                         <li class="menu-list__item">
-                            <a href="#">PROJKETY</a>
+                            <a href="#projects">PROJKETY</a>
                         </li>
                         <li class="menu-list__item">
-                            <a href="#">DESIGN</a>
+                            <a href="#design">DESIGN</a>
                         </li>
                         <li class="menu-list__item">
-                            <a href="#">KONTAKT</a>
+                            <a href="#gallery">GALERIA</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#contact">KONTAKT</a>
                         </li>
                     </ul>
                 </div>
@@ -63,7 +72,7 @@
             </nav>
         </header>
         <main>
-            <section class="hero">
+            <section class="hero" id="home">
                 <div class="info-section">
                     <div class="info-section__text">
                         <header class="hero-header">
@@ -76,7 +85,7 @@
                             Obecnie poszukuje pracy.
                         </h3>
                     </div>
-                    <button class="btn">Poznaj mnie</button>
+                    <button class="btn"><a href="#about">Poznaj mnie</a></button>
                     <div class="social">
                         <div class="social__icon">
                             <img src="./assets/mail.svg" alt="Mail icon">
@@ -99,7 +108,7 @@
                 <div class="bg">
                 </div>
             </section>
-            <section class="stack">
+            <section class="stack" id="about">
                 <div class="stack-background">
                     <div class="stack-logos">
                         <div class="icon-box  angular">
@@ -147,10 +156,10 @@
                         W przyszłości chciałbym dołączyć do zespołu, który pozowli mi wpełni rozwinać skrzydła w tej
                         technologii. Jako backend w swoich projektach korzystam z usług jakie oferuje Firebase. Jestem otawrty na inne technologie typu React lub Vue
                     </h3>
-                    <button class="btn btn-blue">Zobacz projekty</button>
+                    <button class="btn btn-blue"><a href="#projects">Zobacz projekty</a></button>
                 </div>
             </section>
-            <section class="projects">
+            <section class="projects" id="projects">
                 <h2 class="section-title"> MOJE PROJEKTY </h2>
                 <h3 class="section-description">Kliknij w wybrany projekt by poznac szczegóły. Projekty są przdstawione
                     w kolejności od najnowszego po najstarszy. Większość z nich to landing page z
@@ -194,7 +203,7 @@
                     </div>
                 </div>
             </section>
-            <section class="design">
+            <section class="design" id="design">
                 <div class="design-background">
                     <div class="design-tools">
                         <div class="design-tools__box design-tools__ps">
@@ -213,10 +222,10 @@
                         Obecnie nie zajmuje się już tematyką gier ale umiejętności zdobyte wtedy wykorzystuje do
                         projektowania aplikacji webowych.
                     </h3>
-                    <button class="btn btn-blue">Idź do galerii</button>
+                    <button class="btn btn-blue"><a href="#gallery">Idź do galerii</a></button>
                 </div>
             </section>
-            <section class="gallery">
+            <section class="gallery" id="gallery">
                 <div class="gallery-text-info">
                     <h2 class="section-title">
                         Moje prace

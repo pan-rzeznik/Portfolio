@@ -4,4 +4,4 @@ import "./menu";
 import "./photoEffects"; 
 import './animations' 
 import './gallery'
-
+import './scroll'
