@@ -9,7 +9,6 @@ const toggler = document.querySelector('.nav .hamburger-menu');
 
 const pushMenu = () => {
     menu.classList.toggle('side-nav--open');
-    logo.classList.toggle('moveBtn');
     toggler.classList.toggle('moveBtn');
 }
 menuButton.addEventListener('click', ()=> {
@@ -25,12 +24,12 @@ navLink.forEach( link => {
 const heroObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach( entry => {
         if(!entry.isIntersecting) {
-            nav.classList.add('nav--fixed');
+            toggler.classList.add('nav--fixed');
         }
         else {
-            nav.classList.remove('nav--fixed');
+            toggler.classList.remove('nav--fixed');
         }
     }) 
-}, {rootMargin: "-100px 0px 0px 0px"})
+}, {rootMargin: "-50px 0px 0px 0px"})
 
 heroObserver.observe(heroSection);

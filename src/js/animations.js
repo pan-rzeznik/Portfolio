@@ -11,19 +11,19 @@ const frame = document.querySelectorAll('.img-section__frame');
 const frame1 = document.querySelectorAll('.img-section--frame1');
 const frame2= document.querySelectorAll('.img-section--frame2');
 
-window.addEventListener('DOMContentLoaded', (event) => {
-    tlHero.set(heroText, {opacity: 0, y:20})
-    .set(heroImgSection, {opacity: 0, x:200})
-    .set(frame1, {y:35, }) 
-    .set(frame2, {x:35,})
-    .set(frame, { opacity: 0 })
-    .to(bg, 2, {ease: Expo.easeOut, x:'0', delay: .2})
-    .to(heroText, 1, {ease: Expo.easeOut, opacity: 1, y:0}, )
-    .to(navBar, 1, {ease: Expo.easeOut, opacity: 1})
-    .to(heroImgSection, 1, {ease: Power1.easeOut, opacity: 1, x: 0}, "-=1")
-    .to(frame1, .5, {y: 0, opacity: 1, scale: 1,})
-    .to(frame2, .5, {x:0, opacity: 1, scale: 1} )
-});
+// window.addEventListener('DOMContentLoaded', (event) => {
+//     tlHero.set(heroText, {opacity: 0, y:20})
+//     .set(heroImgSection, {opacity: 0, x:200})
+//     .set(frame1, {y:35, }) 
+//     .set(frame2, {x:35,})
+//     .set(frame, { opacity: 0 })
+//     .to(bg, 2, {ease: Expo.easeOut, x:'0', delay: .2})
+//     .to(heroText, 1, {ease: Expo.easeOut, opacity: 1, y:0}, )
+//     .to(navBar, 1, {ease: Expo.easeOut, opacity: 1})
+//     .to(heroImgSection, 1, {ease: Power1.easeOut, opacity: 1, x: 0}, "-=1")
+//     .to(frame1, .5, {y: 0, opacity: 1, scale: 1,})
+//     .to(frame2, .5, {x:0, opacity: 1, scale: 1} )
+// });
 
 
 
