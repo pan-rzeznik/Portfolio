@@ -5,3 +5,7 @@ import "./photoEffects";
 import './animations' 
 import './gallery'
 import './scroll'
+import './languageSwitcher'
+
+
+

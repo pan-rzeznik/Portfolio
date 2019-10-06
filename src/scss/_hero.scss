@@ -19,7 +19,7 @@
         max-height: 100%; 
         height: 100%; 
         will-change: transform;
-        // transform: translateX(-100%);
+        transform: translateX(-100%);
 
             @media (max-width: 1490px) {
                 width: 75vw;
@@ -38,7 +38,7 @@
 }
 
 .info-section {
-    // opacity: 0;
+    opacity: 0;
     box-sizing: border-box;
     align-self: flex-end;
     height: 70%;
@@ -137,7 +137,12 @@
         &__icon {
             margin-right: 18px;
             width: 35px;
-    
+            opacity: .4;
+            transition: .4s opacity ease-out;
+
+            &:hover {
+                opacity: 1;
+            }
             img { 
                 
                 width: 100%;
@@ -189,6 +194,7 @@
             margin-left: 7vw;
             position: relative;
             width: 50vh; 
+            height: 50vh;
         }
 
         &--frame1 {

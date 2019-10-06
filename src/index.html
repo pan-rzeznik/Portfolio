@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/favicon.svg" />
     <title>M-Websites</title>
 </head>
 
@@ -25,23 +26,23 @@
                                     <div class="icon-box">
                                         <img src="./assets/menu/home.svg" alt="">
                                     </div>
-                                Home
+                                    <span>Home</span>  
                                 </li>
-                            </a>    
+                            </a>
                             <a href="#about">
-                            <li class="side-menu-list__item">
-                                <div class="icon-box">
-                                    <img src="./assets/menu/man-user.svg" alt="">
-                                </div>
-                                O mnie
-                            </li>
+                                <li class="side-menu-list__item">
+                                    <div class="icon-box">
+                                        <img src="./assets/menu/man-user.svg" alt="">
+                                    </div>
+                                    <span data-text="navAbout">O mnie</span>
+                                </li>
                             </a>
                             <a href="#projects">
-                                <li class="side-menu-list__item">
+                                <li class="side-menu-list__item" >
                                     <div class="icon-box">
                                         <img src="./assets/menu/programming-code.svg" alt="">
                                     </div>
-                                    Projekty
+                                    <span data-text="navProjects">Projekty</span>
                                 </li>
                             </a>
                             <a href="#design">
@@ -49,7 +50,7 @@
                                     <div class="icon-box">
                                         <img src="./assets/menu/design.svg" alt="">
                                     </div>
-                                    Desgin
+                                    <span>Desgin</span>
                                 </li>
                             </a>
                             <a href="#gallery">
@@ -57,18 +58,28 @@
                                     <div class="icon-box">
                                         <img src="./assets/menu/gallery.svg" alt="">
                                     </div>
-                                    Galeria
+                                    <span data-text="navGallery">Galeria</span>
                                 </li>
-                             
                             </a>
                             <a href="#contact">
-                                <li class="side-menu-list__item">
+                                <li class="side-menu-list__item" >
                                     <div class="icon-box">
                                         <img src="./assets/menu/email.svg" alt="">
                                     </div>
-                                    Kontakt
+                                    <span data-text="navContact">Kontakt</span>
+                                </li>
+                            </a>
+                            <li class="side-menu-list__item language-switcher">
+                                <div>
+                                    <label for="pol">Polski</label>
+                                     <input type="radio" name="lang" id="pol" checked>
+                                </div>
+                             <div>
+                                 <label for="eng">English</label>
+                                 <input type="radio" name="lang" id="eng">
+                             </div>
+                               
                             </li>
-                        </a>
                         </ul>
                     </div>
                 </div>
@@ -84,22 +95,26 @@
                 <div class="info-section">
                     <div class="info-section__text">
                         <header class="hero-header">
-                            <h2>junior</h2>
-                            <h1>frontend developer</h1>
+                            <h2 data-text="heroTitle2">junior</h2>
+                            <h1 data-text="heroTitle">frontend developer</h1>
                         </header>
-                        <h3>Mam na imię Damian i na co dzień zajmuje się <br class="br-hero">
-                            projektowaniem i programowaniem aplikacji webowych.
-                            Weekendami studiuje w Krakowie Informatykę i Ekonometirię na 3 roku.
+                        <h3 data-text="hereDescription">Mam na imię Damian i zajmuje się
+                            tworzeniem aplikacji webowych.
+                            Weekendami studiuje w Krakowie Informatykę i Ekonometrię na 3 roku.
                             Obecnie poszukuje pracy.
                         </h3>
                     </div>
-                    <a class="btn" href="#about">Poznaj mnie</a>
+                    <a class="btn" href="#about" data-text="heroButton">Poznaj mnie</a>
                     <div class="social">
                         <div class="social__icon">
-                            <img src="./assets/github-logo.svg" alt="Github icon">
+                            <a href="https://github.com/pan-rzeznik">
+                                <img src="./assets/github-logo.svg" alt="Github icon">
+                            </a>
                         </div>
                         <div class="social__icon">
-                            <img src="./assets/linkedin.svg" alt="Linkedin icon">
+                            <a href="https://www.linkedin.com/in/damian-marusarz-7ab06a152/">
+                                <img src="./assets/linkedin.svg" alt="Linkedin icon">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -152,56 +167,107 @@
                             <img src="./assets/gulp.svg" alt="">
                         </div>
                     </div>
-                    <h2 class="section-title">
-                        STACK<br>TECHNOLOGICZNY
+                    <h2 class="section-title" data-text="stackTitle">
+                        STACK <br> TECHNOLOGICZNY
                     </h2>
-                    <h3 class="section-description">Na codzień głównie skupiam się na pisaniu aplikacji przy pomocy
-                        Angulara 6+. <br class="br-stack">
-                        W przyszłości chciałbym dołączyć do zespołu, który pozowli mi wpełni rozwinać skrzydła w tej
-                        technologii. Jako backend w swoich projektach korzystam z usług jakie oferuje Firebase. Jestem
-                        otawrty na inne technologie typu React lub Vue
+                    <h3 class="section-description" data-text="stackDescription">Na co dzień głównie skupiam się na pisaniu aplikacji przy pomocy
+                        Angulara 6+.
+                        W przyszłości chciałbym dołączyć do zespołu,
+                        który pozwoli mi w pełni rozwinąć skrzydła w tej technologii.
+                        Jako backend w swoich projektach korzystam z usług jakie oferuje Firebase. Jestem otwarty na
+                        inne technologie typu React lub Vue.
                     </h3>
-                    <a href="#projects" class="btn btn-blue">Zobacz projekty</a>
+                    <a href="#projects" class="btn btn-blue" data-text="stackButton">Zobacz projekty</a>
                 </div>
             </section>
             <section class="projects" id="projects">
-                <h2 class="section-title"> MOJE PROJEKTY </h2>
-                <h3 class="section-description">Kliknij w wybrany projekt by poznac szczegóły. Projekty są przdstawione
-                    w kolejności od najnowszego po najstarszy. Większość z nich to landing page z
-                    wyjąkiem sklepu internetowego, który napsiałem przy pomocy Angulara + Firebase</h3>
+                <h2 class="section-title" data-text="projectsTitle"> MOJE PROJEKTY </h2>
+                <h3 class="section-description" data-text="projectsDescription">Projekty są przedstawione w kolejności od najnowszego po najstarszy.
+                    Większość z nich to landing page z wyjątkiem sklepu internetowego, który napisałem przy pomocy
+                    Angulara + Firebase. Zdecydowałem zbudować coś większego stąd, na chwilę obecną tylko jeden projekt
+                    w tej technologii.
+                </h3>
                 <div class="projects-grid">
                     <div class="projects-grid__item">
                         <div class="img-box">
+                            <div class="img-box__filter">
+                                <a href="https://github.com/pan-rzeznik/Portfolio" target="_blank">
+                                    <button class="btn-project" data-text="projectsGithubButton">Zobacz na Github</button>
+                                </a>
+                                <a href="https://m-websites.pl/" target="_blank">
+                                    <button class="btn-project" data-text="projectsLivebButton">Zobacz na żywo</button>
+                                </a>
+                            </div>
                             <img src="./assets/projects/portfolio2.jpg" alt="">
                             <img src="./assets/projects/portfolio1.jpg" alt="">
                         </div>
                     </div>
                     <div class="projects-grid__item">
                         <div class="img-box">
+                            <div class="img-box__filter">
+                                <a href="https://github.com/pan-rzeznik/eHorel" target="_blank">
+                                    <button class="btn-project" data-text="projectsGithubButton">Zobacz na Github</button>
+                                </a>
+                                <a href="https://testowy-cc7cb.firebaseapp.com/" target="_blank">
+                                    <button class="btn-project" data-text="projectsLivebButton">Zobacz na żywo</button>
+                                </a>
+                            </div>
                             <img src="./assets/projects/ehorel2.jpg" alt="">
                             <img src="./assets/projects/ehorel1.jpg" alt="">
                         </div>
                     </div>
                     <div class="projects-grid__item">
                         <div class="img-box">
+                            <div class="img-box__filter">
+                                <a href="https://github.com/pan-rzeznik/iWatch" target="_blank">
+                                    <button class="btn-project" data-text="projectsGithubButton">Zobacz na Github</button>
+                                </a>
+                                <a href="https://iwatch-new.firebaseapp.com/" target="_blank">
+                                    <button class="btn-project" data-text="projectsLivebButton">Zobacz na żywo</button>
+                                </a>
+                            </div>
                             <img src="./assets/projects/iwatch2.jpg" alt="">
                             <img src="./assets/projects/iwatch1.jpg" alt="">
                         </div>
                     </div>
                     <div class="projects-grid__item">
                         <div class="img-box">
+                            <div class="img-box__filter">
+                                <a href="https://github.com/pan-rzeznik/FitnessClub" target="_blank">
+                                    <button class="btn-project" data-text="projectsGithubButton">Zobacz na Github</button>
+                                </a>
+                                <a href="https://fitness-m-websites.firebaseapp.com/" target="_blank">
+                                    <button class="btn-project" data-text="projectsLivebButton">Zobacz na żywo</button>
+                                </a>
+                            </div>
                             <img src="./assets/projects/fitness2.jpg" alt="">
                             <img src="./assets/projects/fitness1.jpg" alt="">
                         </div>
                     </div>
                     <div class="projects-grid__item">
                         <div class="img-box">
+                            <div class="img-box__filter">
+                                <a href="#" target="_blank">
+                                    <button class="btn-project" data-text="projectsGithubButton">Zobacz na Github</button>
+                                </a>
+                                <a href="https://fitness-m-websites.firebaseapp.com/" target="_blank">
+                                    <button class="btn-project" data-text="projectsLivebButton">Zobacz na żywo</button>
+                                </a>
+                            </div>
                             <img src="./assets/projects/forest2.jpg" alt="">
                             <img src="./assets/projects/forest1.jpg" alt="">
                         </div>
                     </div>
                     <div class="projects-grid__item">
                         <div class="img-box">
+                            <div class="img-box__filter ">
+                                <a href="https://github.com/pan-rzeznik/Crafty" target="_blank">
+                                    <button class="btn-project" data-text="projectsGithubButton">Zobacz na Github</button>
+                                </a>
+                                <a href="https://crafty-m-websites.firebaseapp.com/" target="_blank">
+                                    <button class="btn-project" data-text="projectsLivebButton">Zobacz na żywo</button>
+                                </a>
+                            </div>
                             <img src="./assets/projects/crafty2.jpg" alt="">
                             <img src="./assets/projects/crafty1.jpg" alt="">
                         </div>
@@ -218,35 +284,35 @@
                             <img src="./assets/xd-logo.svg" alt="XD logo">
                         </div>
                     </div>
-                    <h2 class="section-title">
+                    <h2 class="section-title" data-text="designTitle">
                         UMIEJĘTNOŚCI <br> PROJEKTOWE
                     </h2>
-                    <h3 class="section-description">Dawniej zajmowałem się projektowaniem interfejsów gier mobilnych
+                    <h3 class="section-description" data-text="designDescription">Dawniej zajmowałem się projektowaniem interfejsów gier mobilnych
                         czysto hobbystycznie co z czasem przerodziło się w pracę zdalną nad dużym tytułem desktopowym.
-                        Był to nasz pierwszy poważny kontrakt, nad którym spędziliśmy ponad rok łącznie z negocjacjami.
+                        Był to nasz pierwszy poważny kontrakt, nad którym wspólnie z moim kolegą spędziliśmy ponad rok.
                         Obecnie nie zajmuje się już tematyką gier ale umiejętności zdobyte wtedy wykorzystuje do
                         projektowania aplikacji webowych.
                     </h3>
-                    <a href="#gallery" class="btn btn-blue">Idź do galerii</a>
+                    <a href="#gallery" class="btn btn-blue" data-text="designButton">Idź do galerii</a>
                 </div>
             </section>
             <section class="gallery" id="gallery">
                 <div class="gallery-text-info">
-                    <h2 class="section-title">
-                        Moje prace
+                    <h2 class="section-title" data-text="galleryTitle">
+                       MOJE PRACE
                     </h2>
-                    <h3 class="section-description">Galeria poniżej przedstawia część z moich autorskich projektów jakie
+                    <h3 class="section-description" data-text="galleryDescription">Galeria poniżej przedstawia część z moich autorskich projektów jakie
                         wykonałem do tej pory na potrzeby naszych aplikacji, które były firmowane logiem Nevadro Apps.
-                        Cześć z nich nie było wykorzystywane w produktach, a tylko na naszych kanałach
-                        społecznościowych.
+                        Cześć z nich nie było wykorzystywane w produktach, a tylko na naszych kanałach społecznościowych
+                        lub są to prace, które wykonywałem w wolnych chwilach.
                     </h3>
                 </div>
                 <div class="gallery__box">
                     <div class="button-group filters-button-group">
-                        <h4 class="button-group__title">Wybierz kategorię:</h4>
-                        <button class="button is-checked default" data-filter=".nobles">Gra desktopowa</button>
-                        <button class="button" data-filter=".nevadro-apps">Gry mobilne</button>
-                        <button class="button" data-filter=".others">Pozostałe</button>
+                        <h4 class="button-group__title" data-text="galleryCategories">Wybierz kategorię:</h4>
+                        <button class="button is-checked default" data-filter=".nobles" data-text="galleryCategoriesDestop">Gra desktopowa</button>
+                        <button class="button" data-filter=".nevadro-apps" data-text="galleryCategoriesMobile">Gry mobilne</button>
+                        <button class="button" data-filter=".others" data-text="galleryCategoriesOthers">Pozostałe</button>
                     </div>
                     <div class="grid">
                         <div class="nobles">
@@ -437,8 +503,29 @@
                 </div>
             </section>
         </main>
-        <footer></footer>
+        <footer class="contact" id="contact">
+            <div class="contact__box">
+                <h2 data-text="contactTitle">Kontakt</h2>
+                <h3 data-text="contactDescription">Zaintersowane osoby proszę o kontakt na wskazany adres email. Cv wraz z listami referencyjnymi będę
+                    przesyłał w korespondencji prywatnej. </h3>
+                <p>damianmarusarz@outlook.com</p>
+            </div>
+            <div class="social">
+                <div class="social__icon">
+                    <a href="https://github.com/pan-rzeznik" target="_blank">
+                        <img src="./assets/github-logo.svg" alt="Github icon">
+                    </a>
+                </div>
+                <div class="social__icon">
+                    <a href="https://www.linkedin.com/in/damian-marusarz-7ab06a152/" target="_blank">
+                        <img src="./assets/linkedin.svg" alt="Linkedin icon">
+                    </a>
+                </div>
+            </div>
     </div>
+    </footer>
+    </div>
+
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 </body>
 
