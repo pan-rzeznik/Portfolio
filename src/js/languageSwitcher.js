@@ -6,6 +6,7 @@ const language = {
         navProjects: 'Projekty',
         navGallery: 'Galeria',
         navContact: 'Kontakt',
+        switcherDescription: 'Wybierz język:',
         heroTitle: 'frontend developer',
         heroTitle2: 'junior',
         hereDescription: `Mam na imię Damian i zajmuje się
@@ -53,6 +54,7 @@ const language = {
         navProjects: 'Projects',
         navGallery: 'Gallery',
         navContact: 'Contact',
+        switcherDescription: 'Choose language:',
         heroTitle: 'frontend developer',
         heroTitle2: 'junior',
         hereDescription: `My name is Damian and I deal with
