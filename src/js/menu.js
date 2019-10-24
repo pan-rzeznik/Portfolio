@@ -9,9 +9,11 @@ const navLink = document.querySelectorAll('.side-nav a');
 const toggler = document.querySelector('.nav .hamburger-menu');
 const menuItems = document.querySelectorAll('.side-menu-list__item');
 
+
 const pushMenu = () => {
     if(window.pageYOffset > 880) {
         toggler.classList.toggle('moveBtn--bigger'); 
+        logo.classList.toggle('moveBtn--bigger');
     } else if (window.innerWidth < 550) {
         toggler.classList.toggle('moveBtn--bigger'); 
         logo.classList.toggle('moveBtn--bigger');
@@ -19,6 +21,8 @@ const pushMenu = () => {
     else {
         toggler.classList.toggle('moveBtn'); 
     }
+
+
 
     menu.classList.toggle('side-nav--open');
     const tlMenu = new TimelineMax();
@@ -35,6 +39,13 @@ const tooglerAnimation = ()=> {
 menuButton.addEventListener('click', ()=> {
    tooglerAnimation();
    pushMenu();
+   if(toggler.classList.contains('bug-fix')) {
+       toggler.classList.remove('bug-fix')
+       toggler.classList.remove('moveBtn')
+       toggler.classList.remove('moveBtn--bigger')
+       logo.classList.remove('moveBtn--bigger')
+       logo.classList.remove('moveBtn')
+   }
 })
 navLink.forEach( link => {
     link.addEventListener('click', ()=> {
@@ -46,6 +57,9 @@ navLink.forEach( link => {
 const heroObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach( entry => {
         if(!entry.isIntersecting) {
+            if(menu.classList.contains('side-nav--open')) {
+                toggler.classList.add('bug-fix');
+            }
             toggler.classList.add('nav--fixed');
         }
         else {

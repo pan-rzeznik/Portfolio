@@ -2,37 +2,29 @@ var iso = new Isotope( '.grid', {
     itemSelector: '.element-item',
 });
 
-// window.addEventListener('loaded', (event) => {
-//     document.querySelector('.default').click();
-// });
+ 
+  const filterFns = {}; 
 
-  
-  // filter functions
-  var filterFns = {}; 
-  
-  // bind filter button click
-  var filtersElem = document.querySelector('.filters-button-group');
+  const filtersElem = document.querySelector('.filters-button-group');
   filtersElem.addEventListener( 'click', function( event ) {
 
     if ( !matchesSelector( event.target, 'button' ) ) {
       return;
     }
-    var filterValue = event.target.getAttribute('data-filter');
-    // use matching filter function
+    let filterValue = event.target.getAttribute('data-filter');
     filterValue = filterFns[ filterValue ] || filterValue;
     iso.arrange({ filter: filterValue });
   });
   
   // change is-checked class on buttons
-  var buttonGroups = document.querySelectorAll('.button-group');
-  for ( var i=0, len = buttonGroups.length; i < len; i++ ) {
-    var buttonGroup = buttonGroups[i];
+  const buttonGroups = document.querySelectorAll('.button-group');
+  for ( let i=0, len = buttonGroups.length; i < len; i++ ) {
+    let buttonGroup = buttonGroups[i];
     radioButtonGroup( buttonGroup );
   }
   
   function radioButtonGroup( buttonGroup ) {
     buttonGroup.addEventListener( 'click', function( event ) {
-      // only work with buttons
       if ( !matchesSelector( event.target, 'button' ) ) {
         return;
       }
@@ -65,6 +57,10 @@ const gallerySectionObserver = new IntersectionObserver((entries, observer) => {
     setTimeout(() => {
       document.querySelector('button[data-filter=".nobles"]').click();
     }, 400);
+
+    setTimeout(() => {
+      document.querySelector('button[data-filter=".nobles"]').click();
+    }, 200);
   }
 })
 sectionsObserve.forEach( section => {

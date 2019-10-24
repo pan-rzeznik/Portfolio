@@ -17,12 +17,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
     .set(frame1, {y:35, }) 
     .set(frame2, {x:35,})
     .set(frame, { opacity: 0 })
-    .to(bg, 2, {ease: Expo.easeOut, x:'0', delay: .2})
+    .to(bg, 1.5, {ease: Expo.easeOut, x:'0', delay: .2})
     .to(heroText, 1, {ease: Expo.easeOut, opacity: 1, y:0}, )
-    .to(navBar, 1, {ease: Expo.easeOut, opacity: 1})
+    .to(navBar, 1, {ease: Expo.easeOut, opacity: 1}, "-=1")
     .to(heroImgSection, 1, {ease: Power1.easeOut, opacity: 1, x: 0}, "-=1")
-    .to(frame1, .5, {y: 0, opacity: 1, scale: 1,})
-    .to(frame2, .5, {x:0, opacity: 1, scale: 1} )
+    .to(frame1, .3, {y: 0, opacity: 1, scale: 1,})
+    .to(frame2, .3, {x:0, opacity: 1, scale: 1} )
 });
 
 
@@ -38,15 +38,15 @@ const ng = document.querySelector('.angular');
 const xPosition = window.innerWidth > 660 ? -100 : -35;
 const yPosition = window.innerWidth > 660 ? -30 : 0;
 
-tlStack.set(allIcons, {scale: .2, opacity: 0, x: 40, y: 30 })
+tlStack.set(allIcons, {scale: .2, opacity: 0, x: 0, y: 0 })
    .set(ng, {opacity: 0, x: xPosition, y: yPosition})
    .set([stackTextDesc, stackTextTitle], { y: 70, opacity: 0 })
    .set(stackBtn, {opacity: .2, x: 50});
 
 const stackAnimation = () => {
-    tlStack.to(ng, .6, {ease: Power1.easeOut, opacity: 1,  scale: 1.6, delay: .5})
+    tlStack.to(ng, .6, {ease: Power1.easeOut, opacity: 1,  scale: 1.6, delay: .2})
     .to(ng, 1, {ease: Power1.easeOut, x: '0', y: '0', scale: 1, delay: .3})
-    .to(allIcons, 1, {ease: Power1.easeOut, x: '0', y: '0', scale: .9, opacity: 1}, "-=.1")
+    .to(allIcons, .7, {ease: Power1.easeOut, x: '0', y: '0', scale: .9, opacity: 1}, "-=.5")
     .to([stackTextDesc, stackTextTitle], 1.5, {ease: Power1.easeOut,  y: 0, opacity: 1}, "-=2.8")
     .to(stackBtn, 1.5, {ease: Power1.easeOut,  x: 0, opacity: 1}, "-=2.8")
 }

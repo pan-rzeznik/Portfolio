@@ -46,7 +46,7 @@ const language = {
         galleryCategoriesMobile: 'Gry mobilne',
         galleryCategoriesOthers: 'Pozostałe',
         contactTitle: 'Kontakt',
-        contactDescription: `Zaintersowane osoby proszę o kontakt na wskazany adres email. Cv wraz z listami referencyjnymi będę
+        contactDescription: `Zainteresowane osoby proszę o kontakt na wskazany adres email. Cv wraz z listami referencyjnymi będę
         przesyłał w korespondencji prywatnej.`
     },
     eng: {
@@ -98,7 +98,6 @@ const language = {
     }
 }
 const sockets = document.querySelectorAll('[data-text]');
-console.log(sockets);
 
 const translate = (lang) => {
     const selectedLanguage = language[lang];

@@ -39,6 +39,7 @@ body {
     transition: .5s background-color, .5s color, .5s border-color;
     will-change: background-color, color, border-color;
     text-align: center;
+    outline: #1255E2;
 
     @media (max-width: 506px) { 
         border: 1px solid white;
@@ -54,8 +55,8 @@ body {
 }
 
 .btn-blue {
-    color: #6696ff;
-    border: 2px solid #6696ff;
+    color: rgb(48, 101, 216);
+    border: 2px solid rgb(48, 101, 216);
     transition: .5s background-color, .5s color, .5s border-color;
     will-change: background-color, color, border-color;
     text-align: center;
