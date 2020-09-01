@@ -1,305 +1,299 @@
 .stack {
-    @include spacing-section; 
+  @include spacing-section;
 
-    &-background {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 570px;
-        max-width: 1300px;
-        margin: 0 auto;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.11);
-        background-color: white;
+  &-background {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 570px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.11);
+    background-color: white;
 
-        @media(max-width:1170px) {
-            flex-wrap: nowrap;
-            height: auto;
-            padding: 30px;
+    @media (max-width: 1170px) {
+      flex-wrap: nowrap;
+      height: auto;
+      padding: 30px;
+    }
+  }
+
+  &-logos {
+    position: relative;
+    order: 0;
+    height: 100%;
+    min-width: 700px;
+    width: 30%;
+
+    .icon-box {
+      img {
+        transition: 0.3s transform;
+        width: 90%;
+
+        @media (max-width: 660px) {
+          width: 50%;
         }
+      }
     }
 
-    &-logos {
-        position: relative;
-        order: 0;
-        height: 100%;
-        min-width: 700px;
-        width: 30%;
-       
-        .icon-box {
-
-            img {
-                transition: .3s transform;
-                width: 90%;
-
-                @media(max-width: 660px) {
-                    width: 50%;
-                }
-            }
-           
-        }
-
-        @media(max-width:1390px) {
-            min-width: 550px;
-        }
-
-        @media(max-width:1170px) {
-            order: 1;
-            min-height: 620px;
-        }
-
-        @media(max-width: 660px) {
-            order: 1;
-            min-height: 300px;
-            min-width: 550px;
-            margin-bottom: -15px;
-            margin-left: -10px;
-        }
-
-        @media(max-width: 410px) {
-            order: 1;
-            min-height: 300px;
-            min-width: 490px;
-            margin-bottom: -15px;
-            margin-left: -10px;
-        }
-
-        .angular {
-            position: absolute;
-            top: 34%;
-            right: 19%;
-            will-change: transform, opacity;
-
-            @media(max-width:1390px) {
-                right: 0;
-            }
-
-            @media(max-width: 660px) {
-                right: 19%;
-                top: 24%;
-            }
-
-            @media(max-width: 410px) {
-                right: 14%;
-                top: 24%;
-            }
-           
-        }
-
-        .firebase {
-            position: absolute;
-            top: 12%;
-            right: 17%;
-            will-change: transform, opacity;
-
-            @media(max-width:1390px) {
-                right: 0;
-            }
-
-            @media(max-width: 660px) {
-                top: 0;
-                right: 32%;
-            }
-
-        }
-
-        .webpack {
-            position: absolute;
-            top: 12%;
-            right: 37%;
-            will-change: transform, opacity;
-
-            @media(max-width:1390px) {
-                right: 27%;
-            }
-
-            @media(max-width: 660px) {
-                top: 4%;
-                right: 49%;
-            }
-        }
-
-        .typescript {
-            position: absolute;
-            top: 44%;
-            right: 55%;
-            will-change: transform, opacity;
-
-            @media(max-width:1390px) {
-                right: 49%;
-            }
-
-            @media(max-width: 660px) {
-                top: 42%;
-                right: 55%;
-            }
-        }
-
-        .git {
-            position: absolute;
-            top: 24%;
-            right: 49%;
-            will-change: transform, opacity;
-
-            @media(max-width:1390px) {
-                right: 41%;
-            }
-
-            @media(max-width: 660px) {
-                top: 20%;
-                right: 55%;
-            }
-        }
-
-        .html {
-            position: absolute;
-            top: 25%;
-            right: 66%;
-            will-change: transform, opacity;
-
-            @media(max-width:1390px) {
-                right: 65%;
-            }
-
-            @media(max-width: 660px) {
-                top: 20%;
-                right: 70%;
-                
-                img {
-                    width: 60%;
-                }
-            }
-        }
-
-        .sass {
-            position: absolute;
-            top: 67%;
-            right: 49%;
-            will-change: transform, opacity;
-
-            @media(max-width:1390px) {
-                right: 41%;
-            }
-
-            @media(max-width: 660px) {
-                top: 63%;
-                right: 50%;
-            }
-        }
-
-        .css {
-            position: absolute;
-            top: 78%;
-            right: 33%;
-            will-change: transform, opacity;
-
-            @media(max-width:1390px) {
-                right: 18%;
-            }
-
-            @media(max-width: 660px) {
-                top: 69%;
-                right: 40%;
-            }
-        }
-
-        .bootstrap {
-            position: absolute;
-            top: 7%;
-            right: 59%;
-            will-change: transform, opacity;
-
-            @media(max-width:1390px) {
-                right: 52%;
-            }
-
-            @media(max-width: 660px) {
-                top: 2%;
-                right: 65%;
-            }
-        }
-
-        .npm {
-            position: absolute;
-            top: 60%;
-            right: 69%;
-            will-change: transform, opacity;
-
-            @media(max-width: 660px) {
-                top: 62%;
-                right: 65%;
-            }
-        }
-
-        .js {
-            position: absolute;
-            top: 42%;
-            right: 75%;
-            will-change: transform, opacity;
-
-            @media(max-width: 660px) {
-                top: 43%;
-                right: 72%;
-            }
-        }
-
-        .gulp {
-            position: absolute;
-            top: 9%;
-            right: 75%;
-        will-change: transform, opacity;
-
-            @media(max-width: 660px) {
-                top: 9%;
-                right: 80%;
-            }
-        }
+    @media (max-width: 1390px) {
+      min-width: 550px;
     }
 
-    .section-title {
-        margin: 8% 20px 20px 0;
-
-        @media(max-width:1170px) {
-            order: 0;
-            margin: 20px 10px;
-        }
-
-        @media(max-width: 660px) {
-            margin: 20px 10px 30px;
-        }
-
-        @media(max-width: 410px) {
-            font-size: 24px;
-        }
+    @media (max-width: 1170px) {
+      order: 1;
+      min-height: 620px;
     }
 
-    .section-description {
-        max-width: 40%;
-        margin-bottom: 35px;
-
-        @media(max-width:1170px) {
-            order: 2;
-            max-width: 100%;
-        }
-
-        
-        @media(max-width: 660px) {
-            font-size: 14px;
-        }
+    @media (max-width: 660px) {
+      order: 1;
+      min-height: 300px;
+      min-width: 550px;
+      margin-bottom: -15px;
+      margin-left: -10px;
     }
 
-    .btn {
-        max-width: 200px;
-        margin-bottom: 0;
-
-        @media(max-width:1170px) {
-            order: 3;
-        }
-
-        @media(max-width: 660px) {
-            font-size: 14px;
-            
-        }
+    @media (max-width: 410px) {
+      order: 1;
+      min-height: 300px;
+      min-width: 490px;
+      margin-bottom: -15px;
+      margin-left: -10px;
     }
+
+    .angular {
+      position: absolute;
+      top: 34%;
+      right: 19%;
+      will-change: transform, opacity;
+
+      @media (max-width: 1390px) {
+        right: 0;
+      }
+
+      @media (max-width: 660px) {
+        right: 19%;
+        top: 24%;
+      }
+
+      @media (max-width: 410px) {
+        right: 14%;
+        top: 24%;
+      }
+    }
+
+    .firebase {
+      position: absolute;
+      top: 12%;
+      right: 17%;
+      will-change: transform, opacity;
+
+      @media (max-width: 1390px) {
+        right: 0;
+      }
+
+      @media (max-width: 660px) {
+        top: 0;
+        right: 32%;
+      }
+    }
+
+    .webpack {
+      position: absolute;
+      top: 12%;
+      right: 37%;
+      will-change: transform, opacity;
+
+      @media (max-width: 1390px) {
+        right: 27%;
+      }
+
+      @media (max-width: 660px) {
+        top: 4%;
+        right: 49%;
+      }
+    }
+
+    .typescript {
+      position: absolute;
+      top: 44%;
+      right: 55%;
+      will-change: transform, opacity;
+
+      @media (max-width: 1390px) {
+        right: 49%;
+      }
+
+      @media (max-width: 660px) {
+        top: 42%;
+        right: 55%;
+      }
+    }
+
+    .git {
+      position: absolute;
+      top: 24%;
+      right: 49%;
+      will-change: transform, opacity;
+
+      @media (max-width: 1390px) {
+        right: 41%;
+      }
+
+      @media (max-width: 660px) {
+        top: 20%;
+        right: 55%;
+      }
+    }
+
+    .html {
+      position: absolute;
+      top: 25%;
+      right: 66%;
+      will-change: transform, opacity;
+
+      @media (max-width: 1390px) {
+        right: 65%;
+      }
+
+      @media (max-width: 660px) {
+        top: 20%;
+        right: 70%;
+
+        img {
+          width: 60%;
+        }
+      }
+    }
+
+    .sass {
+      position: absolute;
+      top: 67%;
+      right: 49%;
+      will-change: transform, opacity;
+
+      @media (max-width: 1390px) {
+        right: 41%;
+      }
+
+      @media (max-width: 660px) {
+        top: 63%;
+        right: 50%;
+      }
+    }
+
+    .css {
+      position: absolute;
+      top: 78%;
+      right: 33%;
+      will-change: transform, opacity;
+
+      @media (max-width: 1390px) {
+        right: 18%;
+      }
+
+      @media (max-width: 660px) {
+        top: 69%;
+        right: 40%;
+      }
+    }
+
+    .bootstrap {
+      position: absolute;
+      top: 7%;
+      right: 59%;
+      will-change: transform, opacity;
+
+      @media (max-width: 1390px) {
+        right: 52%;
+      }
+
+      @media (max-width: 660px) {
+        top: 2%;
+        right: 65%;
+      }
+    }
+
+    .puppeteer {
+      position: absolute;
+      top: 60%;
+      right: 67%;
+      will-change: transform, opacity;
+
+      @media (max-width: 660px) {
+        top: 62%;
+        right: 62%;
+      }
+    }
+
+    .js {
+      position: absolute;
+      top: 42%;
+      right: 75%;
+      will-change: transform, opacity;
+
+      @media (max-width: 660px) {
+        top: 43%;
+        right: 72%;
+      }
+    }
+
+    .gulp {
+      position: absolute;
+      top: 9%;
+      right: 75%;
+      will-change: transform, opacity;
+
+      @media (max-width: 660px) {
+        top: 9%;
+        right: 80%;
+      }
+    }
+  }
+
+  .section-title {
+    margin: 3% 20px 20px 0;
+
+    @media (max-width: 1170px) {
+      order: 0;
+      margin: 20px 10px;
+    }
+
+    @media (max-width: 660px) {
+      margin: 20px 10px 30px;
+    }
+
+    @media (max-width: 410px) {
+      font-size: 24px;
+    }
+  }
+
+  .section-description {
+    max-width: 45%;
+    margin-bottom: 35px;
+
+    @media (max-width: 1170px) {
+      order: 2;
+      max-width: 100%;
+    }
+
+    @media (max-width: 660px) {
+      font-size: 14px;
+    }
+  }
+
+  .btn {
+    max-width: 200px;
+    margin-bottom: 0;
+
+    @media (max-width: 1170px) {
+      order: 3;
+    }
+
+    @media (max-width: 660px) {
+      font-size: 14px;
+    }
+  }
 }

@@ -46,21 +46,20 @@ const gallerySectionObserver = new IntersectionObserver((entries, observer) => {
      const src = element.getAttribute('data-src');
       element.setAttribute('src', src);
     });
+
+    document.querySelector('button[data-filter=".others"]').click(); 
+
     sectionsObserve.forEach( section => {
       gallerySectionObserver.unobserve(section); 
     })
+
     setTimeout(() => {
-      document.querySelector('button[data-filter=".others"]').click(); 
-     
+      document.querySelector('button[data-filter=".nobles"]').click();
     }, 100);
-
+    
     setTimeout(() => {
       document.querySelector('button[data-filter=".nobles"]').click();
-    }, 400);
-
-    setTimeout(() => {
-      document.querySelector('button[data-filter=".nobles"]').click();
-    }, 200);
+    }, 800);
   }
 })
 sectionsObserve.forEach( section => {
