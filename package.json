@@ -32,6 +32,6 @@
     "isotope-layout": "^3.0.6",
     "normalize.css": "^8.0.1",
     "smooth-scroll": "^16.1.0",
-    "three": "^0.109.0"
+    "three": "^0.125.0"
   }
 }
